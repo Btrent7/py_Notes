@@ -3,8 +3,8 @@ import openpyxl
 from datetime import date
 
 # Load Data Form
-source_file = r"C:\Users\btrent\OneDrive - The Reliable Automatic Sprinkler Co., Inc\New Part Number\NewPartNumber\NewPartNumber_Form.xlsx"
-df = pd.read_excel(source_file, sheet_name="699_NP#")
+source_file = "C:/user/partNumber.xlsx"
+df = pd.read_excel(source_file, sheet_name="pNum")
 
 print(df)
 
@@ -33,8 +33,8 @@ def apply_markup(price, code):
 list_price = apply_markup(tpp_price, markup_code)
 
 # Output to Data Table
-output_file = r"C:\Users\btrent\OneDrive - The Reliable Automatic Sprinkler Co., Inc\New Part Number\NewPartNumber_Table.xlsx"
-df_output = pd.read_excel(output_file, sheet_name="699_Table")
+output_file = "C:/user/partNumber2.xlsx"
+df_output = pd.read_excel(output_file, sheet_name="table_pn")
 
 print(df_output)
 
