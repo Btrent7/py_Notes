@@ -1,8 +1,8 @@
 import pandas as pd
 
-master_file = r"C:\Users\btrent\OneDrive - The Reliable Automatic Sprinkler Co., Inc\Documents\Data Analysis\Data Cleaning\SKU\SKU Master\SKU MASTER.xlsx"
-update_file = r"C:\Users\btrent\OneDrive - The Reliable Automatic Sprinkler Co., Inc\Documents\Data Analysis\Data Cleaning\SKU\SKU Master\update_py_file.xlsx"
-updated_final = r"C:\Users\btrent\OneDrive - The Reliable Automatic Sprinkler Co., Inc\Documents\Data Analysis\Data Cleaning\SKU\SKU Master\updated_SKU.xlsx"
+master_file = "C:/SKU Master/SKU_MASTER.xlsx"
+update_file = "C:/SKU Master/update.xlsx"
+updated_final = "C:/SKU Master/SKU_updated.xlsx"
 
 master = pd.read_excel(master_file)
 update = pd.read_excel(update_file)
