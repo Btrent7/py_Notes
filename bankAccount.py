@@ -1,23 +1,6 @@
 import pandas as pd
 import numpy as np
 
-class Name:
-    def __init__(self):
-        self.firstname = "[no first name]"
-        self.lastname = "[no last name]"
-
-class Person:
-    def __init__(self, firstname = 'none', lastname = 'none'):
-        self.firstname = firstname
-        self.lastname = lastname
-        self.eyecolor = "[no eye color]"
-        self.age = -1
-
-me = Person("Brandon", "Trent")
-none = Person()
-print(me.firstname, me.lastname)
-
-
 class BankAccount: 
     def __init__(self, name, balance = 0.0):
         self.log ("Account created!")
