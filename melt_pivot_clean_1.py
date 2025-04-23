@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-df_file = r"C:\Users\btrent\OneDrive - The Reliable Automatic Sprinkler Co., Inc\Documents\Data Analysis\budge\Test Reports\pivot_tables\test_melt.xlsx"
+df_file = r"C:\Users\melt.xlsx"
 df = pd.read_excel(df_file, sheet_name="Sheet1")
 print(df)
 print()
