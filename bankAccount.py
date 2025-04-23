@@ -36,10 +36,6 @@ class BankAccount:
         self.balance -= amount
         self.log("Money withdrawn.")
 
-    # def setBalance(self, newBalance):
-    #     self.log("Balance set at" + str(newBalance))
-    #     self.balance = newBalance
-
     def log(self, message):
         myLog = open("Log.txt", "a")
         print(message, file = myLog)
@@ -54,5 +50,5 @@ print(myAccount.getBalance())
 myAccount.withdraw(5.25)
 print(myAccount.getBalance())
 
-wifeAccount = BankAccount("Ana Trent", 55.00)
+wifeAccount = BankAccount("wife", 55.00)
 print(wifeAccount.getBalance())
