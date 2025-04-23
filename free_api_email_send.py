@@ -9,9 +9,10 @@ flow = InstalledAppFlow.from_client_secrets_file('creds.json', SCOPES)
 creds = flow.run_local_server(port=0)
 service = build('gmail', 'v1', credentials=creds)
 message = MIMEText("Hello! Test.")
-message['to'] = 'btrent@reliablesprinkler.com'
+message['to'] = 'btrent@email.com'
 message['subject'] = 'New Part Number'
 create_message =  {'raw': base64.urlsafe_b64encode(message.as_bytes()).decode()}
+
 try:
     message = (service.users().messages().send(userId="me", body=create_message).execute())
     print(F'sent message!')
@@ -39,13 +40,13 @@ except HTTPError as error:
 # .py"""
 
 # SCOPES = [ "https://www.googleapis.com/auth/gmail.send"]
-# flow = InstalledAppFlow.from_client_secrets_file(r'C:/Users/btrent/OneDrive - The Reliable Automatic Sprinkler Co., Inc/New Part Number/NewPartNumber/creds.json', SCOPES)
+# flow = InstalledAppFlow.from_client_secrets_file(r'C:/Users/btrent//creds.json', SCOPES)
 # creds = flow.run_local_server(port=0)
 # service = build('gmail', 'v1', credentials=creds)
 
 # message = MIMEText(email_body)
-# message['to'] = 'btrent@reliablesprinkler.com'
-# message['subject'] = '@reliablesprinkler.noreply'
+# message['to'] = 'btrent@email.com'
+# message['subject'] = '@email.noreply'
 
 # create_message =  {'raw': base64.urlsafe_b64encode(message.as_bytes()).decode()}
 
