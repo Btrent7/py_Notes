@@ -1,9 +1,9 @@
 import pandas as pd
 import numpy as np
 
-pivot_table = r"C:\Users\btrent\OneDrive - The Reliable Automatic Sprinkler Co., Inc\Documents\Data Analysis\PO Reports\Copy of Sys Comp buyer numbers.xlsx"
-powerBi_table = r"C:\Users\btrent\OneDrive - The Reliable Automatic Sprinkler Co., Inc\Documents\Data Analysis\PO Reports\PO Orders _ ALL.xlsx"
-analysis_table = r"C:\Users\btrent\OneDrive - The Reliable Automatic Sprinkler Co., Inc\Documents\Data Analysis\budge\Test Reports\test_Table.xlsx"
+pivot_table = "C:/file/start.xlsx"
+powerBi_table = "C:/file/powerBi.xlsx"
+analysis_table = "C:/file/final.xlsx"
 
 df = pd.read_excel(pivot_table, sheet_name = "Sheet1")
 
